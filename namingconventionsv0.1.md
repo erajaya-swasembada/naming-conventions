@@ -233,7 +233,7 @@ Things to consider:
     and the column name(s) indexed.
 
     > **Sample:**
-
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
      > CREATE TABLE person (
 
      > Id bigserial PRIMARY KEY,
@@ -248,7 +248,7 @@ Things to consider:
 
      > CREATE INDEX person_ix_first_name_last_name ON person
      > (first_name_last_name);
-
+     >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 -   Similar to indexes, constraints should give descriptive names. This
     is especially true for check constraints. It's much easier to
     diagnose an errant insert if the check constraints that was violated
@@ -306,31 +306,29 @@ identifier:
 
 -   Things to consider:
 
-a.  Reveal intentions. Sample: fileName is better f; maxPugs is better
-    than pugs.
+a.  Reveal intentions. 
+    >**Sample:** fileName is better f; maxPugs is better than pugs.
 
-b.  Make distinctions. Sample: moneyInDollars is better than money.
+b.  Make distinctions. 
+    >**Sample:** moneyInDollars is better than money.
 
-c.  Put the distinguishing aspect first. Sample:
-    dollarMoney and rupeeMoney are better
-    than moneyInDollars and moneyInRupees.
+c.  Put the distinguishing aspect first. 
+    >**Sample:** dollarMoney and rupeeMoney are better than moneyInDollars and moneyInRupees.
 
-d.  Easy to pronounce. Sample: timeStamp is better than ts.
+d.  Easy to pronounce. 
+    >**Sample:** timeStamp is better than ts.
 
 e.  Verbs for functions.
+    >**Sample:** getName() and isPosted() are good; hasWeight() or isMale() when boolean values are returned; toDollars() for conversions.
 
-> **Sample:** getName() and isPosted() are good; hasWeight() or isMale() when boolean values are returned; toDollars() for conversions.
+f.  One word, one concept: fetch, retrieve, get all imply the same thing: use one of them consistently.
 
-f.  One word, one concept: fetch, retrieve, get all imply the same
-    thing: use one of them consistently.
-
-g.  Relate to business context. Sample: AddCustomer is better
-    than IncrementCounter.
+g.  Relate to business context. 
+    >**Sample:** AddCustomer is better than IncrementCounter.
 
 h.  Use shortforms judiciously
-
-> **Sample:** PremiumCust may be used over PremiumCustomer to emphasize
-> \"Premium\"; but fn is not a good substitute for fileName.
+    >**Sample:** PremiumCust may be used over PremiumCustomer to emphasize
+    >\"Premium\"; but fn is not a good substitute for fileName.
 
 i.  Describe content rather than storage. Sample: user_info is better
     than user_list.
@@ -471,8 +469,8 @@ final 2.0).
 
 > **Sample:**
 
-  **Date        |   Author |  Version |  Change Reference**
- -------------|----------|----------|-------------------------------------------------                                   
-  Aug 04, 2020 |  xxx    |  V0.0   |  xxx
-  Aug 20, 2020 |  xxx    |  V0.1    |  xxx
- -------------------------------------------------------------------------------------
+    **Date        |   Author |  Version |  Change Reference**
+    -------------|----------|----------|-------------------------------------------------                                   
+     Aug 04, 2020 |  xxx    |  V0.0   |  xxx
+     Aug 20, 2020 |  xxx    |  V0.1    |  xxx
+    -------------------------------------------------------------------------------------
