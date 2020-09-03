@@ -465,7 +465,7 @@ final 2.0).
     should be submitted to the IRB with the final protocol and
     consent/assent documents.
 
- **Sample:**
+    > **Sample:**
  
      
   Date         |      Author         |  Version  | Change Reference
