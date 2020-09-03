@@ -173,12 +173,12 @@ Things to consider:
 -   Full words, not abbreviations. Object names should be full English
     words. In general, to avoid abbreviations.
 
-    > **Sample: use middle_name not mid_nm.
+    > **Sample:** use middle_name not mid_nm.
 
 -   Tables, views, and other relations that hold data should have
     singular names, not plural.
 
-    > **Sample: team, not teams
+    > **Sample:** team, not teams
 
 -   The sentences are consistency and unambiguous.
 
@@ -209,7 +209,7 @@ Things to consider:
 
 -   Object names should not include the object types of them.
 
-    > **Sample:
+    >**Sample:**
 
     VW_foobar
 
@@ -218,14 +218,14 @@ Things to consider:
     applications sharing the same database and want to prevent them from
     clobbering each other, use schemas instead.
 
-    > **Sample:
+    >**Sample:**
 
     postgresql
 
 -   Some database commands that create database objects do not require
     you specify a name. You should be explicitly specifying names.
 
-    > **Sample:
+    >**Sample:**
 
     fk239nxvknvsdv1 or via a formula like foobar_ix_1
 
