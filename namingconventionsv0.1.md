@@ -466,6 +466,7 @@ final 2.0).
     consent/assent documents.
 
  **Sample:**
+ 
      Date         |   Author |  Version |  Change Reference
     --------------|----------|----------|-------------------------------------------------                             
      Aug 04, 2020 |  xxx     |  V0.0    |  xxx
