@@ -41,7 +41,7 @@ Change Record
   Date         |      Author         |  Version  | Change Reference
  --------------|---------------------|-----------|-------------------------------------------------                                               
   Aug 04, 2020 |  Meilyana Indriyani |  V.0.0    | Create Naming Conventions Standard Documentation
-  Aug 20, 2020 |  Meilyana Indriyani |  V0.1     | Revision minor
+  Aug 20, 2020 |  Meilyana Indriyani |  V0.1     | Revision minor - Add Sample
   
 
 Reviewers
@@ -83,7 +83,7 @@ convention.
 Category of Naming Conventions
 ------------------------------
 
-It\'s common to categorize a naming convention as one of these:
+It common to categorize a naming convention as one of these:
 
 -   Typographical: This relates to the use of letter case and symbols
     such as underscore, dot and hyphen.
@@ -159,7 +159,7 @@ Things to consider:
     identifier names means that every usage of the identifier will need
     to be quoted in double quotes.
 
-**Sample:** use first_name not "First_name".
+    > **Sample: use first_name not "First_name".
 
 -   Data types are not names. Database object names, particularly column
     names, should be a noun describing the field or object. Avoid using
@@ -168,107 +168,107 @@ Things to consider:
 -   Underscores separate words. Object name that are comprised of
     multiple words should be separated by underscores.
 
-**Sample:** word_count or team_member_id, not wordcount or wordCount.
+    > **Sample: word_count or team_member_id, not wordcount or wordCount.
 
 -   Full words, not abbreviations. Object names should be full English
     words. In general, to avoid abbreviations.
 
-**Sample:** use middle_name not mid_nm.
+    > **Sample: use middle_name not mid_nm.
 
 -   Tables, views, and other relations that hold data should have
     singular names, not plural.
 
-**Sample:** team, not teams
+    > **Sample: team, not teams
 
 -   The sentences are consistency and unambiguous.
 
 -   Single column primary key fields should be named "id"
 
-**Sample:**
+    **Sample:**
 
-CREATE TABLE person (
+     CREATE TABLE person (
 
-Id bigint PRIMARY KEY,
+     Id bigint PRIMARY KEY,
 
-Full_name text NOT NULL,
+     Full_name text NOT NULL,
 
-Birth_date text NOT NULL);
+     Birth_date text NOT NULL);
 
 -   Foreign key fields should be a combination of the name of the
     referenced table and the name of the referenced fields.
 
-**Sample:**
+    > **Sample:**
 
-CREATE TABLE team_member (
+     CREATE TABLE team_member (
 
-Team_id bigint NOT NULL REFERENCES team(id)
+     Team_id bigint NOT NULL REFERENCES team(id)
 
-Person_id bigint NOT NULL REFERENCES person(id)
+     Person_id bigint NOT NULL REFERENCES person(id)
 
-CONSTRAINT team_member_pkey PRIMARY KEY (team_id, person_id));
+     CONSTRAINT team_member_pkey PRIMARY KEY (team_id, person_id));
 
 -   Object names should not include the object types of them.
 
-**Sample:**
+    > **Sample:
 
-VW_foobar
+    VW_foobar
 
 -   All modern databases support some form of namespacing. You can
     create schemas to group database objects. If you have multiple
     applications sharing the same database and want to prevent them from
     clobbering each other, use schemas instead.
 
-**Sample:**
+    > **Sample:
 
-postgresql
+    postgresql
 
 -   Some database commands that create database objects do not require
     you specify a name. You should be explicitly specifying names.
 
-**Sample:**
+    > **Sample:
 
-fk239nxvknvsdv1 or via a formula like foobar_ix_1
+    fk239nxvknvsdv1 or via a formula like foobar_ix_1
 
 -   Indexes should be explicitly names and include both the table name
     and the column name(s) indexed.
 
-**Sample:**
+    **Sample:
 
-CREATE TABLE person (
+     > CREATE TABLE person (
 
-Id bigserial PRIMARY KEY,
+     > Id bigserial PRIMARY KEY,
 
-Email text NOT NULL,
+     > Email text NOT NULL,
 
-First_name text NOT NULL,
+     > First_name text NOT NULL,
 
-Last_name text NOT NULL,
+     > Last_name text NOT NULL,
 
-CONTRAINT person_ckss_email_lower_case CHECK (email = LOWER(email)));
+     > CONTRAINT person_ckss_email_lower_case CHECK (email = LOWER(email)));
 
-CREATE INDEX person_ix_first_name_last_name ON person
-(first_name_last_name);
+     > CREATE INDEX person_ix_first_name_last_name ON person
+     > (first_name_last_name);
 
 -   Similar to indexes, constraints should give descriptive names. This
     is especially true for check constraints. It's much easier to
     diagnose an errant insert if the check constraints that was violated
     lets you know the cause.
 
-**Sample:**
+    > **Sample:
 
-CREATE TABLE team (
+    > CREATE TABLE team (
 
-Id bigserial PRIMARY KEY,
+    > Id bigserial PRIMARY KEY,
 
-Name text NOT NULL);
+    > Name text NOT NULL);
 
-CREATE TABLE team_member (
+    > CREATE TABLE team_member (
 
-Team_id bigint REFERENCES team(id),
+    > Team_id bigint REFERENCES team(id),
 
-Person_id bigint REFERENCES person(id),
+    > Person_id bigint REFERENCES person(id),
 
-CONSTRAINT team_member_pkey PRIMARY KEY (team_id, person_id));
+    > CONSTRAINT team_member_pkey PRIMARY KEY (team_id, person_id));
 
 ### Coding Naming Conventions
 
@@ -304,9 +304,6 @@ identifier:
         COBOL, Lisp, Perl 6, and CSS. Since hyphen in many languages is
         used for subtraction, Kebab Case is less common than Snake Case.
 
-```{=html}
-<!-- -->
-```
 -   Things to consider:
 
 a.  Reveal intentions. Sample: fileName is better f; maxPugs is better
@@ -322,9 +319,7 @@ d.  Easy to pronounce. Sample: timeStamp is better than ts.
 
 e.  Verbs for functions.
 
-> Sample: getName() and isPosted() are
-> good; hasWeight() or isMale() when boolean values are
-> returned; toDollars() for conversions.
+> **Sample: getName() and isPosted() are good; hasWeight() or isMale() when boolean values are returned; toDollars() for conversions.
 
 f.  One word, one concept: fetch, retrieve, get all imply the same
     thing: use one of them consistently.
@@ -334,7 +329,7 @@ g.  Relate to business context. Sample: AddCustomer is better
 
 h.  Use shortforms judiciously
 
-> Sample: PremiumCust may be used over PremiumCustomer to emphasize
+> **Sample: PremiumCust may be used over PremiumCustomer to emphasize
 > \"Premium\"; but fn is not a good substitute for fileName.
 
 i.  Describe content rather than storage. Sample: user_info is better
@@ -399,7 +394,7 @@ of significance.
 -   Patch numbers change when a new build of the software is released to
     > customers. This is normally for small bug-fixes or the like.
 
-> **Sample:**
+> **Sample:
 >
 > 4.2.1:
 >
@@ -425,14 +420,14 @@ Refer to following guidelines:
     and, when possible, is incorporated into the header or footer of the
     document and appears on every succeeding page.
 
-**Sample**: 30 August 2020
+> **Sample: 30 August 2020
 
 -   **Version numbers**; The author of the document will ensure the
     current version number is identified on the first page and, when
     possible, is incorporated into the header or footer of the document
     and appears on every succeeding page.
 
-**Sample**: V0.0, V1.0, V2.0
+> **Sample: V0.0, V1.0, V2.0
 
 -   **Draft document version number**
 
@@ -459,7 +454,7 @@ c.  Subsequent final documents will have an increase of "1.0" in the
     revisions. While the document is under review, subsequent draft
     versions will increase by "0.1"
 
-**Sample**: 1.1, 1.2, 1.3
+> **Sample: 1.1, 1.2, 1.3
 
 When the revised document is deemed final, the version will increase by
 "1.0" over the version being revised (e.g., the draft 1.3 will become a
@@ -472,11 +467,10 @@ final 2.0).
     should be submitted to the IRB with the final protocol and
     consent/assent documents.
 
-**Sample**:
+> **Sample:
 
-  -------------- -------- --------- --------------------------------------------------
-  Date           Author   Version   Change Reference
-                                    
-  Aug 04, 2020   xxx      V.0.0     Create Naming Conventions Standard Documentation
-  Aug 20, 2020   xxx      V0.1      Revision minor
-  -------------- -------- --------- --------------------------------------------------
+  **Date        |   Author |  Version |  Change Reference
+ -------------|----------|----------|-------------------------------------------------                                   
+  Aug 04, 2020 |  xxx    |  V0.0   |  xxx
+  Aug 20, 2020 |  xxx    |  V0.1    |  xxx
+ 
