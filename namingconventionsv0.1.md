@@ -427,23 +427,23 @@ Refer to following guidelines:
 
 -   **Draft document version number**
 
-a.  Define the draft of a document and subsequent draft will increase
+    a.  Define the draft of a document and subsequent draft will increase
     the number. 
     > **Sample:** Version 0.1, Version 0.2, Version 0.3
 
 -   **Final document version number and date**
 
-a.  The author (or investigator) will deem a protocol or other document
+    a.  The author (or investigator) will deem a protocol or other document
     (consent/assent form, case report form, manual of procedures) final
     after all reviewers have provided final comments and the comments
     have been addressed.
 
-b.  The first final version of a document will be Version 1.0. Include
+    b.  The first final version of a document will be Version 1.0. Include
     the date when the document becomes final. Generally, the final
     version is submitted to the Institutional Review Board (IRB) and/or
     FDA.
 
-c.  Subsequent final documents will have an increase of "1.0" in the
+    c.  Subsequent final documents will have an increase of "1.0" in the
     version number.
     > **Sample:** 1.0, 2.0, etc
 
@@ -465,10 +465,9 @@ final 2.0).
     should be submitted to the IRB with the final protocol and
     consent/assent documents.
 
-> **Sample:
-
+ **Sample:**
      Date         |   Author |  Version |  Change Reference
-    ------------- |----------|----------|-------------------------------------------------                                   
+    --------------|----------|----------|-------------------------------------------------                             
      Aug 04, 2020 |  xxx     |  V0.0    |  xxx
      Aug 20, 2020 |  xxx     |  V0.1    |  xxx
     --------------------------------------------------------------------------------------
