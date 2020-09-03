@@ -184,7 +184,7 @@ Things to consider:
 
 -   Single column primary key fields should be named "id"
 
-    **Sample:**
+    > **Sample:**
 
      CREATE TABLE person (
 
@@ -209,7 +209,7 @@ Things to consider:
 
 -   Object names should not include the object types of them.
 
-    >**Sample:**
+    > **Sample:**
 
     VW_foobar
 
@@ -218,21 +218,21 @@ Things to consider:
     applications sharing the same database and want to prevent them from
     clobbering each other, use schemas instead.
 
-    >**Sample:**
+    > **Sample:**
 
     postgresql
 
 -   Some database commands that create database objects do not require
     you specify a name. You should be explicitly specifying names.
 
-    >**Sample:**
+    > **Sample:**
 
     fk239nxvknvsdv1 or via a formula like foobar_ix_1
 
 -   Indexes should be explicitly names and include both the table name
     and the column name(s) indexed.
 
-    **Sample:
+    > **Sample:**
 
      > CREATE TABLE person (
 
@@ -254,7 +254,7 @@ Things to consider:
     diagnose an errant insert if the check constraints that was violated
     lets you know the cause.
 
-    > **Sample:
+    > **Sample:**
 
     > CREATE TABLE team (
 
@@ -319,7 +319,7 @@ d.  Easy to pronounce. Sample: timeStamp is better than ts.
 
 e.  Verbs for functions.
 
-> **Sample: getName() and isPosted() are good; hasWeight() or isMale() when boolean values are returned; toDollars() for conversions.
+> **Sample:** getName() and isPosted() are good; hasWeight() or isMale() when boolean values are returned; toDollars() for conversions.
 
 f.  One word, one concept: fetch, retrieve, get all imply the same
     thing: use one of them consistently.
@@ -329,7 +329,7 @@ g.  Relate to business context. Sample: AddCustomer is better
 
 h.  Use shortforms judiciously
 
-> **Sample: PremiumCust may be used over PremiumCustomer to emphasize
+> **Sample:** PremiumCust may be used over PremiumCustomer to emphasize
 > \"Premium\"; but fn is not a good substitute for fileName.
 
 i.  Describe content rather than storage. Sample: user_info is better
@@ -420,19 +420,20 @@ Refer to following guidelines:
     and, when possible, is incorporated into the header or footer of the
     document and appears on every succeeding page.
 
-> **Sample: 30 August 2020
+    > **Sample:** 30 August 2020
 
 -   **Version numbers**; The author of the document will ensure the
     current version number is identified on the first page and, when
     possible, is incorporated into the header or footer of the document
     and appears on every succeeding page.
 
-> **Sample: V0.0, V1.0, V2.0
+    > **Sample:** V0.0, V1.0, V2.0
 
 -   **Draft document version number**
 
 a.  Define the draft of a document and subsequent draft will increase
-    the number. **Sample:** Version 0.1, Version 0.2, Version 0.3
+    the number. 
+    > **Sample:** Version 0.1, Version 0.2, Version 0.3
 
 -   **Final document version number and date**
 
@@ -447,14 +448,15 @@ b.  The first final version of a document will be Version 1.0. Include
     FDA.
 
 c.  Subsequent final documents will have an increase of "1.0" in the
-    version number **Sample:** 1.0, 2.0, etc
+    version number.
+    > **Sample:** 1.0, 2.0, etc
 
 -   **Final documents undergoing revisions**; Final documents undergoing
     revisions will be Version X.1 for the first version of the
     revisions. While the document is under review, subsequent draft
     versions will increase by "0.1"
 
-> **Sample: 1.1, 1.2, 1.3
+    > **Sample:** 1.1, 1.2, 1.3
 
 When the revised document is deemed final, the version will increase by
 "1.0" over the version being revised (e.g., the draft 1.3 will become a
@@ -467,10 +469,10 @@ final 2.0).
     should be submitted to the IRB with the final protocol and
     consent/assent documents.
 
-> **Sample:
+> **Sample:**
 
-  **Date        |   Author |  Version |  Change Reference
+  **Date        |   Author |  Version |  Change Reference**
  -------------|----------|----------|-------------------------------------------------                                   
   Aug 04, 2020 |  xxx    |  V0.0   |  xxx
   Aug 20, 2020 |  xxx    |  V0.1    |  xxx
- 
+ -------------------------------------------------------------------------------------
