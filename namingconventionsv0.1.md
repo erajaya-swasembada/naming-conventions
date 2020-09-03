@@ -306,35 +306,35 @@ identifier:
 
 -   Things to consider:
 
-a.  Reveal intentions. 
-    >**Sample:** fileName is better f; maxPugs is better than pugs.
+    a.  Reveal intentions. 
+    > **Sample:** fileName is better f; maxPugs is better than pugs.
 
-b.  Make distinctions. 
-    >**Sample:** moneyInDollars is better than money.
+    b.  Make distinctions. 
+    > **Sample:** moneyInDollars is better than money.
 
-c.  Put the distinguishing aspect first. 
-    >**Sample:** dollarMoney and rupeeMoney are better than moneyInDollars and moneyInRupees.
+    c.  Put the distinguishing aspect first. 
+    > **Sample:** dollarMoney and rupeeMoney are better than moneyInDollars and moneyInRupees.
 
-d.  Easy to pronounce. 
-    >**Sample:** timeStamp is better than ts.
+    d.  Easy to pronounce. 
+    > **Sample:** timeStamp is better than ts.
 
-e.  Verbs for functions.
-    >**Sample:** getName() and isPosted() are good; hasWeight() or isMale() when boolean values are returned; toDollars() for conversions.
+    e.  Verbs for functions.
+    > **Sample:** getName() and isPosted() are good; hasWeight() or isMale() when boolean values are returned; toDollars() for conversions.
 
-f.  One word, one concept: fetch, retrieve, get all imply the same thing: use one of them consistently.
+    f.  One word, one concept: fetch, retrieve, get all imply the same thing: use one of them consistently.
 
-g.  Relate to business context. 
-    >**Sample:** AddCustomer is better than IncrementCounter.
+    g.  Relate to business context. 
+    > **Sample:** AddCustomer is better than IncrementCounter.
 
-h.  Use shortforms judiciously
-    >**Sample:** PremiumCust may be used over PremiumCustomer to emphasize
+    h.  Use shortforms judiciously
+    > **Sample:** PremiumCust may be used over PremiumCustomer to emphasize
     >\"Premium\"; but fn is not a good substitute for fileName.
 
-i.  Describe content rather than storage. Sample: user_info is better
-    than user_list.
+    i.  Describe content rather than storage. 
+    > **Sample:** user_info is better than user_list.
 
-j.  Plurals for containers. Sample: fruitNames is better than fruit for
-    an array of fruit names.
+    j.  Plurals for containers. 
+    > **Sample:** fruitNames is better than fruit for an array of fruit names.
 
 ### Database Versioning Rules
 
@@ -347,10 +347,8 @@ your team.
 Things to consider:
 
 -   Prepare the application database and the reference data in it as
-    regular code.
-
-That means should store both its schema and the reference data in a
-source control system.
+    regular code. 
+    > That means should store both its schema and the reference data in a source control system.
 
 -   Store every change in the database schema and in the reference data
     explicitly.
@@ -469,8 +467,8 @@ final 2.0).
 
 > **Sample:**
 
-    **Date        |   Author |  Version |  Change Reference**
-    -------------|----------|----------|-------------------------------------------------                                   
-     Aug 04, 2020 |  xxx    |  V0.0   |  xxx
-     Aug 20, 2020 |  xxx    |  V0.1    |  xxx
-    -------------------------------------------------------------------------------------
+     Date         |   Author |  Version |  Change Reference**
+    ------------- |----------|----------|-------------------------------------------------                                   
+     Aug 04, 2020 |  xxx     |  V0.0    |  xxx
+     Aug 20, 2020 |  xxx     |  V0.1    |  xxx
+    --------------------------------------------------------------------------------------
