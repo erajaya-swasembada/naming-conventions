@@ -38,32 +38,28 @@ Document Control
 Change Record
 -------------
 
-  -------------- -------------------- --------- --------------------------------------------------
-  Date           Author               Version   Change Reference
-                                                
-  Aug 04, 2020   Meilyana Indriyani   V.0.0     Create Naming Conventions Standard Documentation
-  Aug 20, 2020   Meilyana Indriyani   V0.1      Revision minor
-  -------------- -------------------- --------- --------------------------------------------------
+  Date         |      Author         |  Version  | Change Reference
+ --------------|---------------------|-----------|-------------------------------------------------                                               
+  Aug 04, 2020 |  Meilyana Indriyani |  V.0.0    | Create Naming Conventions Standard Documentation
+  Aug 20, 2020 |  Meilyana Indriyani |  V0.1     | Revision minor
+  
 
 Reviewers
 ---------
-
-  -------------------- -------------------------
-  Name                 Position
-                       
-  Alfa Pungki Irawan   IT Architecture Manager
-  -------------------- -------------------------
+  
+  Name                   |Position
+  -----------------------|----------------------
+  Alfa Pungki Irawan          |  IT Architecture Manager
+  ----------------------------------------------
 
 Distribution
 ------------
 
-+----------+--------------------+----------------+
-| Copy No. | Name               | Location       |
-+----------+--------------------+----------------+
-|          |                    |                |
-+----------+--------------------+----------------+
+
+Copy No. | Name               | Location       |
+----------|--------------------|----------------
 | 1.       | Erajaya Swasembada | Gedong Panjang |
-+----------+--------------------+----------------+
+
 
 Naming Conventions
 ==================
