@@ -381,14 +381,14 @@ build meta tag. In this scheme, risk and functionality are the measures
 of significance.
 
 -   Major version numbers change whenever there is some significant
-    > change being introduced. For example, a large or potentially
-    > backward-incompatible change to a software package.
+    change being introduced. For example, a large or potentially
+    backward-incompatible change to a software package.
 
 -   Minor version numbers change when a new, minor feature is introduced
-    > or when a set of smaller features is rolled out.
+    or when a set of smaller features is rolled out.
 
 -   Patch numbers change when a new build of the software is released to
-    > customers. This is normally for small bug-fixes or the like.
+    customers. This is normally for small bug-fixes or the like.
 
 > **Sample:
 >
@@ -465,9 +465,9 @@ final 2.0).
     should be submitted to the IRB with the final protocol and
     consent/assent documents.
 
-> **Sample:**
+> **Sample:
 
-     Date         |   Author |  Version |  Change Reference**
+     Date         |   Author |  Version |  Change Reference
     ------------- |----------|----------|-------------------------------------------------                                   
      Aug 04, 2020 |  xxx     |  V0.0    |  xxx
      Aug 20, 2020 |  xxx     |  V0.1    |  xxx
