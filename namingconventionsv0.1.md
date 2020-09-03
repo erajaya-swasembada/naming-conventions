@@ -42,7 +42,7 @@ Change Record
  --------------|---------------------|-----------|-------------------------------------------------                                               
   Aug 04, 2020 |  Meilyana Indriyani |  V.0.0    | Create Naming Conventions Standard Documentation
   Aug 20, 2020 |  Meilyana Indriyani |  V0.1     | Revision minor - Add Sample
-  
+ -------------------------------------------------------------------------------------------------- 
 
 Reviewers
 ---------
@@ -59,7 +59,7 @@ Distribution
 Copy No. | Name               | Location       |
 ----------|--------------------|----------------
 | 1.       | Erajaya Swasembada | Gedong Panjang |
-
+------------------------------------------------
 
 Naming Conventions
 ==================
@@ -159,7 +159,7 @@ Things to consider:
     identifier names means that every usage of the identifier will need
     to be quoted in double quotes.
 
-    > **Sample: use first_name not "First_name".
+    > **Sample:** use first_name not "First_name".
 
 -   Data types are not names. Database object names, particularly column
     names, should be a noun describing the field or object. Avoid using
@@ -168,7 +168,7 @@ Things to consider:
 -   Underscores separate words. Object name that are comprised of
     multiple words should be separated by underscores.
 
-    > **Sample: word_count or team_member_id, not wordcount or wordCount.
+    > **Sample:** word_count or team_member_id, not wordcount or wordCount.
 
 -   Full words, not abbreviations. Object names should be full English
     words. In general, to avoid abbreviations.
